@@ -55,7 +55,7 @@ const ProjectPreview: React.FC = () => {
                             <div className="p-5">
                                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                                 <p className="text-gray-600 text-sm mb-6">{project.desc}</p>
-                                {project.demo && (<Button color={project.button_color}>{project.demo_text}</Button>)}
+                                {project.demo && (<Button>{project.demo_text}</Button>)}
                             </div>
                         </div>
                     ))}
