@@ -1,4 +1,3 @@
-import AboutMe from './components/AboutMe'
 import BlobsBackground from './components/BlobsBackground'
 import ContactCTA from './components/ContactCTA'
 import Education from './components/Education'
@@ -14,7 +13,6 @@ const App = () => {
       <Specialties />
       <Education />
       <ProjectPreview />
-      <AboutMe />
       <ContactCTA />
     </main>
   )
