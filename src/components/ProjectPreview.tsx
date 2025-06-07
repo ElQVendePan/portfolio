@@ -7,7 +7,7 @@ const projects = [
         title: "Zylo Music",
         desc: "Plataforma de música para artistas independientes desarrollada en React, implementando Tailwind CSS y TypeScript. Desarrollo de backend con PHP y MySQL para la creación de la API y sus respectivas endpoints.",
         img: "/zylo-cover.jpg",
-        demo: "https://zylo-music.vercel.app/",
+        demo: "https://zylo-music.netlify.app/",
         demo_text: "Ver demo",
         button_color: "#95459a",
     },
@@ -55,7 +55,10 @@ const ProjectPreview: React.FC = () => {
                             <div className="p-5">
                                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                                 <p className="text-gray-600 text-sm mb-6">{project.desc}</p>
-                                {project.demo && (<Button>{project.demo_text}</Button>)}
+                                <div className="inline-grid items-center grid-cols-2 gap-4">
+                                    <a href={project.demo} className="bg-purple-600 p-3 font-bold px-5 hover:px-7 duration-200 rounded-full text-white" target="_blank" rel="noopener noreferrer">Mas Información</a>
+                                    {project.demo && (<a href={project.demo} target="_blank"><Button>{project.demo_text}</Button></a>)}
+                                </div>
                             </div>
                         </div>
                     ))}

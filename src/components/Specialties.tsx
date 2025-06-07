@@ -50,7 +50,7 @@ const itemVariants = {
 
 const Skills: React.FC = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-white/40 to-transparent ">
+    <section className="py-16 bg-gradient-to-b from-white/40 to-transparent" id="specialties">
       <div className="max-w-6xl mx-auto px-5 text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6"
